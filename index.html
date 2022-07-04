@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Prata&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Developer Portfolio</title>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				arrows: false,
+				dots: false,
+				pauseOnHover: false,
+				pauseOnClick:false,
+				responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 2
+					}
+				}]
+			});
+		});
+</script>
+</head>
+<body>
+
+      <div id="navbar">
+<ul id="nav-list">
+<li class="nav-logo">Johnathan Specter</a></li>
+<li class="list"><a href="#articles">Articles</a></li>
+<li class="list"><a href="#chats">Chats</a></li>
+<li class="list"><a href="#awards">Awards</a></li>
+<li class="list"><a href="#about">About</a></li>
+<a href="#contact"><button class="nav-btn">Get in touch</button></a>
+        </ul>
+      </div>
+
+<div id="heading">
+<h1>Helping companies build better, scalable software.</h1>
+<p>Award-winning web developer and author, with over 15+ years of working experience with Fortune 500 companies like Apple, Google, Facebook, and more.</p></div>
+<div class="row">
+<div class="container">
+   <section class="customer-logos slider">
+      <div class="slide"><img src="./assets/logos/JP Morgan.svg"></div>
+      <div class="slide"><img src="./assets/logos/Samsung.svg"></div>
+      <div class="slide"><img src="./assets/logos/Tinder.svg"></div>
+      <div class="slide"><img src="./assets/logos/Verizon.svg"></div>
+      <div class="slide"><img src="./assets/logos/Visa.svg"></div>
+      <div class="slide"><img src="./assets/logos/Walmart.svg"></div>
+   </section>
+</div></div>
+<a id="articles">
+<div class="flex-container">
+  <div><a href="https://spense.com/"><img src="./assets/Spense.png"><h1>Spense.com →</h1></a><p>Rethinking the way writers get paid, an open-source platform designed to help
+            writers focus more on writing, and less on <i>when</i> and <i>how</i> they'll
+            get paid. Project in collaboration with Codewell.cc
+          </p></div>
+  <div><a href="https://YelpCamp.com"><img src="./assets/YelpCamp.png"><h1>YelpCamp.com →</h1></a><p>Allowing backpack travelers to perfectly plan their trip through an open-source platform
+            similar to TripAdvisor, With over 1m MAU, YelpCamp has been the crowd's favorite in 2021.</p></div>
+</div>
+</a><a id="chats">
+<div class="infobox"><div class="about">
+    <div><h1>A co-founder at one of the world's largest communities.</h1><p> The combined experiences I have working at the top Fortune 500 companies has
+            allowed me to develop a skillset that helps me in not just development, but in every
+            aspect of any business.</p><p>I'm proud to announce that I am now working at one of the world's largest communities
+            teaching young minds about how to <i>sell</i> yourself as a developer and open them to
+            a whole new world of opportunities.</p></div>
+<div><p>As a developer, you have everything available to you and all that's holding you back is
+            yourself.</p><p> A quote I live by perfectly illustrates what I mean.</p><p style="font-size:25px">"How big would you dream, if you <b>knew</b> you wouldn't fail?"</p>
+            <p>You've already gone through the hardest parts being a developer, it's time to elevate
+            your skills and become a leader in something you're <i>passionate</i> about.</p><p>
+            I'm happy to chat over coffee some time about how I can help your company.</p></div>
+</div></div></a>
+</body>
+</html>

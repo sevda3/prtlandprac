@@ -301,3 +301,9 @@ margin:0;
 	background-color:#2e3038;
 	padding:20px;
 }
+
+@media screen and (max-width: 800px) {
+  .heading h1, .heading p{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
